@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+}
+
+.flex-1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.flex-2 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.flex-3 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-4 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.j {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(233, 146, 228);
+}
+
+.flex-5 {
+  display: flex;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.o {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(233, 146, 228);
+}
+
+.p {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+
+.a {
+  background-color: rgb(250, 217, 175);
+  width: 200px;
+}
+
+.b {
+  background-color: rgb(174, 252, 226);
+  width: 75px;
+}
+
+.c {
+  background-color: rgb(160, 234, 251);
+  width: 50px;
+}
+
+.d {
+  background-color: lightpink;
+  flex: 1;
+}
+
+.e {
+  background-color: bisque;
+}
+
+.f {
+  background-color: lightseagreen;
+}
+
+.g {
+  background-color: yellow;
+}
+
+.h {
+  background-color: rgb(191, 38, 191);
+  flex: 1;
+}
+
+.i {
+  background-color: greenyellow;
+  flex: 2;
+}
+
+.k {
+  background-color: rgb(224, 219, 134);
+  width: 200px;
+}
+
+.l {
+  background-color: black;
+  color: white;
+  padding: 3px 4px;
+}
+
+.n {
+  width: 100px;
+  background-color: rgb(71, 237, 237);
+}

@@ -1,0 +1,35 @@
+.full-box {
+  margin: 12px;
+}
+
+.thumbnail-box,
+.info-box {
+  display: inline-block;
+  vertical-align: top;
+}
+
+p {
+  font-family: "Roboto", arial;
+  margin: 0;
+}
+
+.thumbnail {
+  width: 180px;
+}
+
+.info-box {
+  padding: 5px 5px;
+  width: 250px;
+}
+
+.title {
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.author,
+.details {
+  font-size: 14px;
+  color: rgb(98, 97, 97);
+  margin-bottom: 8px;
+}

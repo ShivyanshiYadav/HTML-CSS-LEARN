@@ -1,0 +1,73 @@
+.tahoma {
+  font-family: tahoma;
+}
+
+.deals,
+.shop {
+  font-family: "Playwrite GB J";
+}
+
+.head {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.deals.sub {
+  font-style: italic;
+  color: rgb(226, 6, 6);
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.course {
+  font-family: Verdana;
+}
+
+.course.head {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.for {
+  color: grey;
+  margin-top: 0;
+}
+
+.about {
+  width: 300px;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.btn {
+  background-color: rgb(5, 161, 5);
+  color: white;
+  font-size: 15px;
+  border-color: rgb(9, 131, 9);
+  border-style: solid;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.shop {
+  text-align: center;
+}
+
+.shop.head {
+  margin-bottom: 18px;
+}
+
+.shop.sub {
+  margin-top: 0;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+a {
+  text-decoration: none;
+  margin-top: 0;
+  color: rgb(11, 11, 190);
+  display: block;
+}

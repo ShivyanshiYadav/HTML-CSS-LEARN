@@ -1,0 +1,96 @@
+.name {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.email {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.para {
+  width: 400px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.name {
+  width: 150px;
+  height: 28px;
+  display: inline-block;
+  border-radius: 6px;
+  border-color: rgb(184, 182, 182);
+  border-style: solid;
+  padding: 6px 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.email {
+  width: 325px;
+  height: 28px;
+  border-radius: 6px;
+  border-color: rgb(184, 182, 182);
+  border-style: solid;
+  padding: 6px 8px;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.sign-up {
+  width: 345px;
+  height: 40px;
+  color: white;
+  background-color: rgb(55, 87, 233);
+  border-radius: 6px;
+  border-color: rgb(41, 69, 193);
+  border-style: solid;
+  padding: 6px 8px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.ride-head {
+  font-size: 40px;
+  font-family: arial;
+}
+
+.details {
+  border: none;
+  background-color: rgb(242, 239, 239);
+  width: 400px;
+  height: 32px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  margin-top: 0;
+  padding: 6px 8px;
+  display: block;
+}
+
+.request {
+  background-color: black;
+  margin-top: 20px;
+  color: white;
+  border: none;
+  height: 42px;
+  width: 118px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.schedule {
+  background-color: rgb(242, 239, 239);
+  margin-top: 20px;
+  color: block;
+  border: none;
+  height: 42px;
+  padding: 6px 8px;
+  width: 145px;
+  font-weight: 500;
+  border-radius: 2px;
+  cursor: pointer;
+}

@@ -1,0 +1,151 @@
+body {
+  margin-bottom: 100px;
+}
+
+img {
+  width: 200px;
+  margin-right: 80px;
+}
+
+.rec {
+  border-radius: 10px;
+}
+
+.sq {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.circle {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100px;
+}
+
+.search {
+  font-size: 16px;
+  padding: 9px 11px;
+  border-radius: 7px;
+  border-color: rgb(175, 174, 174);
+  border-style: solid;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.google-logo-div,
+.google-search-div,
+.google-btn-div {
+  text-align: center;
+}
+
+.google-logo {
+  width: 220px;
+  margin: 0;
+}
+
+.google {
+  font-size: 16px;
+  width: 400px;
+  padding: 9px 11px;
+  border-radius: 100px;
+  border-color: rgb(222, 220, 220);
+  border-style: solid;
+  box-shadow: 1px 1px 5px rgb(209, 208, 208);
+  margin: 10px auto 15px auto;
+}
+
+.google-btn {
+  background-color: rgb(242, 239, 239);
+  margin-top: 20px;
+  border: none;
+  height: 42px;
+  padding: 6px 8px;
+  width: 145px;
+  font-weight: 500;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+label {
+  color: rgb(80, 79, 79);
+  font-family: arial;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+#email {
+  width: 370px;
+  height: 28px;
+  border-color: rgb(56, 54, 54);
+  border-radius: 3px;
+  border-style: solid;
+  margin-bottom: 20px;
+}
+
+.aj-para {
+  margin-top: 0;
+  color: rgb(80, 79, 79);
+  font-family: arial;
+  font-size: 16px;
+}
+
+.aj-btn {
+  background-color: rgb(58, 9, 217);
+  color: white;
+  font-size: 18px;
+  border-color: rgb(50, 14, 170);
+  border-style: solid;
+  border-radius: 150px;
+  display: block;
+  margin: 0 0 80px 0;
+  cursor: pointer;
+  width: 380px;
+  height: 50px;
+}
+
+.profile-box {
+  width: 420px;
+  border: 2px rgb(189, 187, 187) solid;
+  border-radius: 5px;
+  padding: 8px 8px;
+  box-shadow: 1px 1px 5px rgb(222, 221, 221);
+}
+
+.profile {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 30px;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.profile-para {
+  margin-top: 0;
+  color: rgb(80, 79, 79);
+  font-family: arial;
+  font-size: 17px;
+  display: inline;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.tweet-btn {
+  background-color: rgb(70, 135, 209);
+  color: white;
+  border-color: rgb(47, 118, 199);
+  border-style: solid;
+  width: 75px;
+  height: 35px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 40px;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 120px;
+}

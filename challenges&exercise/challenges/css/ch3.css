@@ -1,0 +1,96 @@
+p {
+  font-family: arial;
+}
+
+.a {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.new {
+  color: orangered;
+  font-size: 15px;
+}
+
+.product {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.benefit {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.price {
+  color: rgb(105, 103, 103);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+button {
+  background-color: rgb(8, 90, 213);
+  color: white;
+  border-color: rgb(12, 78, 177);
+  border-style: solid;
+  border-radius: 18px;
+  padding: 6px 12px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.usd {
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+.usd-w {
+  color: rgb(83, 81, 81);
+  font-size: 18px;
+}
+
+.profit {
+  margin-bottom: 8px;
+  color: green;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.loss {
+  margin-top: 0;
+  font-size: 16px;
+  color: grey;
+}
+
+.specific-loss {
+  color: rgb(200, 10, 10);
+}
+
+.website {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.link {
+  font-weight: 200;
+  color: rgb(83, 81, 81);
+}
+
+.para1 {
+  width: 480px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.para2 {
+  width: 480px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  color: rgb(59, 144, 214);
+  text-decoration: none;
+}

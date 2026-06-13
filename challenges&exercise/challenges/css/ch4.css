@@ -1,0 +1,63 @@
+.full-box {
+  display: grid;
+  grid-template-columns: 220px 220px 220px;
+  column-gap: 20px;
+}
+
+.profile-box {
+  width: 220px;
+  padding-bottom: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  margin: 0;
+}
+
+.profile {
+  width: 220px;
+  height: 180px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.name-box {
+  padding: 6px 5px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: arial;
+}
+
+.friend-info {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.friends {
+  color: rgb(99, 98, 98);
+  font-size: 14px;
+  font-family: arial;
+}
+
+.btn {
+  width: 100px;
+  background-color: rgb(17, 72, 213);
+  border-color: rgb(13, 67, 202);
+  border-style: solid;
+  border-radius: 3px;
+  color: white;
+  padding: 8px 10px;
+  margin-left: 8px;
+}
