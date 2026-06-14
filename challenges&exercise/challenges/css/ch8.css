@@ -1,0 +1,138 @@
+body {
+  height: 2000px;
+  padding-top: 60px;
+  padding-left: 90px;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(210, 207, 207);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  column-gap: 20px;
+}
+
+.profile-picture-box {
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.profile-picture {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-name-box {
+  flex: 2;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.btn-box {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+.friend-btn,
+.message-btn {
+  border-style: solid;
+  border-radius: 4px;
+  padding: 6px 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.friend-btn {
+  background-color: rgb(32, 122, 248);
+  color: white;
+  border-color: rgb(29, 104, 209);
+}
+
+.message-btn {
+  background-color: rgb(210, 207, 207);
+  border-color: rgb(205, 199, 199);
+}
+
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(48, 47, 47);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  width: 80px;
+  align-items: center;
+  padding-top: 15px;
+  row-gap: 8px;
+}
+
+.picture {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.middle-sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(81, 78, 78);
+  position: fixed;
+  left: 80px;
+  top: 55px;
+  bottom: 0;
+  width: 180px;
+  padding: 20px 20px;
+}
+
+.top-line-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  flex: 1;
+}
+
+.add-btn {
+  color: rgb(175, 172, 172);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.options-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 15px;
+}
+
+.option {
+  color: rgb(175, 172, 172);
+}
