@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  font-family: arial;
+  color: rgb(236, 232, 232);
+  background-color: rgb(219, 230, 234);
+}
+
+.card {
+  width: 500px;
+  border-radius: 25px;
+  position: relative;
+}
+
+.card-bg {
+  width: 500px;
+  border-radius: 25px;
+}
+
+.card-logo {
+  width: 60px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+
+.card-chip {
+  width: 70px;
+  position: absolute;
+  top: 35px;
+  right: 35px;
+}
+
+.card-type {
+  font-size: 20px;
+  position: absolute;
+  top: 40px;
+  left: 110px;
+}
+
+.card-number-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  position: absolute;
+  top: 130px;
+  left: 35px;
+}
+
+.card-number-text,
+.valid-day {
+  font-size: 15px;
+}
+
+.card-number,
+.card-owner-name {
+  font-size: 25px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 35px;
+  bottom: 35px;
+  right: 35px;
+}
+
+.valid-date-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+
+.valid-date {
+  font-size: 22px;
+}
