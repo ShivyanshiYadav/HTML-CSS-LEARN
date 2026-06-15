@@ -1,0 +1,138 @@
+body {
+  background-color: rgb(253, 253, 253);
+}
+
+.video-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: -1;
+}
+
+.video-look {
+  position: relative;
+  width: 350px;
+}
+
+.time {
+  position: absolute;
+  bottom: 13px;
+  right: 10px;
+  font-size: 14px;
+  padding: 3px 6px;
+  border-radius: 2px;
+  font-family: arial;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(33, 33, 33);
+}
+
+.time .tooltip {
+  position: absolute;
+  background-color: rgb(152, 152, 152);
+  color: white;
+  font-family: arial;
+  bottom: -33px;
+  right: -10px;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 3px 5px;
+  white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+.time:hover .tooltip {
+  opacity: 1;
+}
+
+.video-thumbnail {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.video-info {
+  display: flex;
+  flex: 1;
+  padding: 0 10px;
+  width: 330px;
+  column-gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-picture-box {
+  position: relative;
+  width: 45px;
+}
+
+.profile-picture-box .tooltip {
+  display: flex;
+  width: 200px;
+  position: absolute;
+  bottom: -76px;
+  right: -176px;
+  align-items: center;
+  background-color: rgb(247, 247, 247);
+  column-gap: 8px;
+  border: 2px solid rgb(233, 228, 228);
+  border-radius: 5px;
+  padding: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.profile-picture-box:hover .tooltip {
+  opacity: 1;
+}
+
+.tooltip-profile-picture {
+  width: 55px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.tooltip-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 4px;
+}
+
+.author {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.subscribers {
+  font-family: arial;
+  font-size: 14px;
+  color: rgb(95, 94, 94);
+}
+
+.profile-picture {
+  width: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: white;
+}
+
+.video-title {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 16px;
+  flex: 1;
+}
+
+.video-title a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.video-title a:hover {
+  color: rgb(80, 80, 80);
+}
