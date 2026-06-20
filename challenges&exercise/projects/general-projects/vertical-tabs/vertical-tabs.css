@@ -1,0 +1,134 @@
+* {
+  font-family: roboto, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(215, 222, 204);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  width: min(850px, 85%);
+  background-color: white;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+header {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+main {
+  display: flex;
+  padding: 25px 0 10px 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4px;
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 8px;
+}
+
+.bx {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.option p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+main:has(#home:checked) label[for="home"] {
+  background-color: rgb(94, 129, 39);
+  color: white;
+}
+
+main:has(#blog:checked) label[for="blog"] {
+  background-color: rgb(94, 129, 39);
+  color: white;
+}
+
+main:has(#code:checked) label[for="code"] {
+  background-color: rgb(94, 129, 39);
+  color: white;
+}
+
+main:has(#help:checked) label[for="help"] {
+  background-color: rgb(94, 129, 39);
+  color: white;
+}
+
+main:has(#about:checked) label[for="about"] {
+  background-color: rgb(94, 129, 39);
+  color: white;
+}
+
+.content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.data {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.content > div {
+  display: none;
+}
+
+#home:checked ~ .content .home-content {
+  display: block;
+}
+
+#blog:checked ~ .content .blog-content {
+  display: block;
+}
+
+#code:checked ~ .content .code-content {
+  display: block;
+}
+
+#help:checked ~ .content .help-content {
+  display: block;
+}
+
+#about:checked ~ .content .about-content {
+  display: block;
+}
