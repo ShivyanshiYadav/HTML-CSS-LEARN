@@ -1,0 +1,120 @@
+* {
+  font-family: roboto, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  background-color: rgb(243, 241, 239);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  border-radius: 4px;
+  width: min(300px, 50%); /*--*/
+  background-color: white;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.15s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.tag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2px;
+  color: white;
+  min-height: 120px;
+  margin-bottom: 18px;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+}
+
+.type {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.price span {
+  font-size: 38px;
+}
+
+.features {
+  text-align: center;
+  font-size: 16px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid rgb(208, 205, 205);
+}
+
+.details p {
+  font-size: 15px;
+}
+
+.detail .bx-check {
+  color: rgb(12, 177, 12);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.detail .bx-x {
+  color: rgb(207, 25, 25);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.btn {
+  margin: 10px 0;
+}
+
+button {
+  outline: none;
+
+  border: none;
+  color: white;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+button:hover {
+  transform: scale(0.98);
+  box-shadow: 0 0 25px rgba(217, 216, 216, 0.8);
+}
+
+button:active {
+  filter: brightness(1.1);
+}
+
+@media (max-width: 768px) {
+}
