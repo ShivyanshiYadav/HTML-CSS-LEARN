@@ -1,0 +1,165 @@
+* {
+  font-family: roboto, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(33, 44, 92);
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  height: 1000px;
+}
+
+footer {
+  background-color: rgb(244, 246, 252);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 14px;
+  padding: 20px 30px;
+  border-bottom: 2px solid rgb(8, 32, 141);
+}
+
+.heading {
+  font-size: 30px;
+  color: rgb(5, 33, 158);
+  font-weight: 600;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  color: white;
+}
+
+.handle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 30px;
+}
+
+.part {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.main-title,
+.subscribe {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+
+input {
+  padding: 8px;
+  border: 2px solid rgb(8, 32, 141);
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 12px 0;
+  color: rgb(14, 32, 112);
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 8px;
+  background-color: rgb(8, 32, 141);
+  border: 2px solid rgb(14, 32, 112);
+  border-radius: 4px;
+  font-size: 18px;
+  color: white;
+}
+
+.extra-bottom {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(223, 225, 233);
+  color: rgb(25, 34, 74);
+  font-weight: 400;
+  font-size: 16px;
+  padding: 20px 30px;
+  gap: 10px;
+}
+
+.copyright,
+.privacy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/*tablet*/
+@media (min-width: 600px) {
+  .middle {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .part {
+    flex: 1 1 45%;
+  }
+
+  .extra-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/*desktop*/
+@media (min-width: 900px) {
+  .middle {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .part {
+    width: auto;
+  }
+
+  .top,
+  .extra-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .bottom {
+    max-width: 400px;
+  }
+
+  .mid-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+}
