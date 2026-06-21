@@ -1,0 +1,144 @@
+* {
+  font-family: roboto, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(222, 198, 228);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  gap: 20px;
+  width: min(90%, 1000px); /*advanced*/
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.heading h2 {
+  color: rgb(139, 21, 169);
+  font-size: 28px;
+}
+
+.heading p {
+  font-size: 15px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+  border-bottom: 2px solid rgb(239, 228, 242);
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  background-color: rgb(239, 228, 242);
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 14px;
+}
+
+button {
+  background-color: rgb(139, 21, 169);
+  color: white;
+  border: 2px solid rgb(99, 21, 118);
+  padding: 8px 0;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  width: 126px;
+  margin: 15px 0;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+button:hover {
+  transform: scale(0.97);
+}
+
+button:active {
+  filter: brightness(1.1);
+}
+
+.company-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding-top: 25px;
+}
+
+.address,
+.phone,
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.bx {
+  font-size: 26px;
+  color: rgb(139, 21, 169);
+}
+
+h3 {
+  color: rgb(139, 21, 169);
+  font-size: 18px;
+}
+
+.company-details p {
+  color: rgb(113, 112, 112);
+  font-size: 15px;
+}
+
+@media (min-width: 620px) {
+  .company-details {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 900px) {
+  .company-details-main-content {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 40px;
+  }
+
+  .user-details {
+    border: none;
+  }
+
+  .company-details {
+    border-right: 2px solid rgb(239, 228, 242);
+  }
+}
