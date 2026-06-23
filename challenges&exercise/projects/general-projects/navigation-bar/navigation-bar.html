@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/challenges&exercise/projects/general-projects/navigation-bar/navigation-bar.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>project10-navigation-bar</title>
+  </head>
+  <body>
+    <nav>
+      <input type="radio" name="slider" id="home" checked />
+      <label for="home">
+        <i class="bx bxs-home"></i>
+        Home
+      </label>
+      <input type="radio" name="slider" id="blog" />
+      <label for="blog">
+        <i class="bx bxl-blogger"></i>
+        Blog
+      </label>
+      <input type="radio" name="slider" id="code" />
+      <label for="code">
+        <i class="bx bx-code"></i>
+        Code
+      </label>
+      <input type="radio" name="slider" id="help" />
+      <label for="help">
+        <i class="bx bxs-help-circle"></i>
+        Help
+      </label>
+      <input type="radio" name="slider" id="about" />
+      <label for="about">
+        <i class="bx bxs-user"></i>
+        About
+      </label>
+      <div class="slider"></div>
+      <!--inside nav bcz its absolute and nav is relative and in last bcz have access inputs/labels-->
+    </nav>
+  </body>
+</html>
