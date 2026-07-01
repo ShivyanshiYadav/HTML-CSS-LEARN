@@ -14,10 +14,15 @@ body {
   padding: 2rem;
 }
 
+main {
+  display: grid;
+  row-gap: 4rem;
+  grid-template-rows: repeat(3, min-content);
+}
+
 header {
   background-color: #1b1b32;
   padding: 1.5rem 0;
-  margin-bottom: 2rem;
 }
 
 h1 {
@@ -27,16 +32,15 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   font-weight: 500;
 }
-
 
 .main-news {
   display: grid;
@@ -51,9 +55,13 @@ p {
 }
 
 .volcano-img {
+  height: 100%;
   padding: 2rem;
-  grid-column: 2 / -1;
+  grid-column: 2/ -1;
+  grid-row: 1 / -1;
   background-color: #dddddd;
+  place-items: center;
+  display: grid;
 }
 
 img {
@@ -70,4 +78,30 @@ img {
 .secondary-news div {
   padding: 2rem;
   background-color: #e9e9e9;
+}
+
+@media (max-width: 920px) {
+  .secondary-news {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, min-content);
+  }
+}
+
+@media (max-width: 870px) {
+  .main-news {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+  }
+
+  .volcano-img {
+    grid-column: 1/ -1;
+    grid-row: 2 / -1;
+  }
+}
+
+@media (max-width: 680px) {
+  .secondary-news {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+  }
 }
