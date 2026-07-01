@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Baskervville", serif;
+  background-color: #ffffff;
+  padding: 2rem;
+}
+
+header {
+  background-color: #1b1b32;
+  padding: 1.5rem 0;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+
+.main-news {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, min-content);
+}
+
+.main-news div {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.volcano-img {
+  padding: 2rem;
+  grid-column: 2 / -1;
+  background-color: #dddddd;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.secondary-news {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.secondary-news div {
+  padding: 2rem;
+  background-color: #e9e9e9;
+}
