@@ -240,9 +240,10 @@ body {
 }
 
 .fb4-window {
-  width: 2%;
-  height: 5%;
+  width: 16%;
+  height: 16%;
   border-radius: 50%;
+  margin: 15%;
   background-color: var(--window-color1);
 }
 
@@ -284,4 +285,36 @@ body {
       var(--window-color3) 5%,
       var(--window-color3) 25%
     );
+}
+
+.sky {
+  background: radial-gradient(
+    closest-corner circle at 15% 15%,
+    rgb(255, 208, 1),
+    rgb(255, 208, 1) 20%,
+    rgb(248, 236, 170) 21%,
+    rgb(184, 228, 249) 100%
+  );
+}
+
+@media (max-width: 800px) {
+  .sky {
+    background: radial-gradient(
+      closest-corner circle at 15% 15%,
+      #ccc,
+      #ccc 20%,
+      #445 21%,
+      #223 100%
+    );
+  }
+  :root {
+    --building-color1: #000;
+    --building-color2: #000;
+    --building-color3: #000;
+    --building-color4: #000;
+    --window-color1: #777;
+    --window-color2: #777;
+    --window-color3: #777;
+    --window-color4: #777;
+  }
 }
