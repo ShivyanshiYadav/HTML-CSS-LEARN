@@ -2,6 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Product Landing Page</title>
     <link
       rel="stylesheet"
@@ -40,34 +50,85 @@
       </form>
       <section id="features">
         <div>
-          <img src="" alt="demanded-content-icon" />
-          <h3>Demanded-content</h3>
-          <p>
-            Our team analyses the highest recommendation/demand sent by our
-            subscribers and design the content on that basis.
-          </p>
+          <span class="icon-box"><i class="bx bxs-hot"></i></span>
+          <span class="feature-details"
+            ><p>Demanded-content</p>
+            <p>
+              Our team analyses the highest recommendation/demand sent by our
+              subscribers and design the content on that basis.
+            </p></span
+          >
         </div>
         <div>
-          <img src="" alt="download-storage-icon" />
-          <h3>Downloads and Cloud Storage</h3>
-          <p>
-            We make sure you are able to download for favorite videos easily
-            without having any storage problem.
-          </p>
+          <span class="icon-box"><i class="bx bxs-cloud-download"></i></span>
+          <span class="feature-details"
+            ><p>Downloads and Cloud Storage</p>
+            <p>
+              We make sure you are able to download for favorite videos easily
+              without having any storage problem.
+            </p></span
+          >
         </div>
         <div>
-          <img src="" alt="quality-icon" />
-          <h3>Quality-content</h3>
-          <p>
-            For every purchase/download you make, we will ensure there are no
-            quality damages or faults or issues.
-          </p>
+          <span class="icon-box"><i class="bx bxs-battery-full"></i></span>
+          <span class="feature-details"
+            ><p>Quality-content</p>
+            <p>
+              For every purchase/download you make, we will ensure there are no
+              quality damages or faults or issues.
+            </p></span
+          >
         </div>
       </section>
       <section id="working">
-        <video id="video" src="videos/sample.mp4" poster controls></video>
+        <video
+          id="video"
+          src="/challenges&exercise/projects/product-landing-page/sample-video.mp4"
+          poster
+          controls
+        ></video>
       </section>
-      <section id="pricing"></section>
+      <section id="pricing">
+        <div class="price-tag">
+          <span class="tag-heading">
+            <p>Bronze Membership</p>
+          </span>
+          <span class="tag-content">
+            <p class="price">$669</p>
+            <p>Good for beginners</p>
+            <p>Excellent sound quality</p>
+            <p>Great for 2-3 year kids</p>
+            <p>Hint of educational content</p>
+            <button>Purchase</button>
+          </span>
+        </div>
+        <!--<div class="price-tag">
+          <span class="tag-heading">
+            <p>Silver Membership</p>
+          </span>
+          <span class="tag-content">
+            <p class="price">$999</p>
+            <p>Sound quality is unmatched</p>
+            <p>Best for 3-7 year kids</p>
+            <p>Educational content</p>
+            <p>Hint of logical reasoning</p>
+            <button>Purchase</button>
+          </span>
+        </div>
+        <div class="price-tag">
+          <span class="tag-heading">
+            <p>Gold Membership</p>
+          </span>
+          <span class="tag-content">
+            <p class="price">$1399</p>
+            <p>Premium sound and visuals</p>
+            <p>Best for above 7 year kids</p>
+            <p>Educational content</p>
+            <p>Logical reasoning</p>
+            <button>Purchase</button>
+          </span>
+        </div>-->
+      </section>
     </main>
   </body>
 </html>
