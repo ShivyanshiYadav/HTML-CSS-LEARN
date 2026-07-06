@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  gap: 60px;
+}
+
+.type {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-------type1-------*/
+
+.loader {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  border: 12px solid rgb(227, 227, 227);
+  border-top-color: blue;
+  animation: spin1 1.6s ease infinite;
+}
+
+@keyframes spin1 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*-------type2-------*/
+.two {
+  gap: 26px;
+}
+
+.dot {
+  background-color: rgb(73, 111, 250);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(235, 235, 235, 0.5);
+  animation: load2 1s ease-in-out infinite alternate;
+}
+
+.dot:nth-of-type(1) {
+  animation-delay: -0.25s;
+}
+
+.dot:nth-of-type(2) {
+  background-color: rgb(243, 49, 49);
+  animation-delay: -0.5s;
+}
+
+.dot:nth-of-type(3) {
+  background-color: rgb(246, 238, 10);
+  animation-delay: -0.75s;
+}
+
+.dot:nth-of-type(4) {
+  background-color: rgb(11, 155, 11);
+  animation-delay: -1s;
+}
+
+@keyframes load2 {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+/*-------type3-------*/
