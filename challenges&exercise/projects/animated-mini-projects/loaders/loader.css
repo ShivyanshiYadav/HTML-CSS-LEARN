@@ -40,13 +40,13 @@ body {
 
 /*-------type2-------*/
 .two {
-  gap: 26px;
+  gap: 20px;
 }
 
 .two .dot {
   background-color: rgb(73, 111, 250);
-  width: 56px;
-  height: 56px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   box-shadow: 0 0 15px rgba(235, 235, 235, 0.5);
   animation: load2 1s ease-in-out infinite alternate;
@@ -149,10 +149,10 @@ body {
   height: 140px;
 
   position: absolute;
-  animation: load4 1.6s linear infinite;
+  animation: load4 2.5s linear infinite;
 }
 
-.inner-layer .dot-container .dot {
+.inner-layer .dot-container .bluedot {
   position: absolute;
   background-color: rgb(73, 111, 250);
   width: 22px;
@@ -205,7 +205,7 @@ body {
   width: 200px;
   height: 140px;
   position: absolute;
-  animation: load4-a 1.6s linear infinite;
+  animation: load4-a 2.5s linear infinite;
 }
 
 .inner-layer-a .dot-container-a .dot-a {
@@ -409,5 +409,148 @@ body {
   100% {
     transform: rotate(360deg);
     box-shadow: 1px 5px 5px rgb(235, 122, 30);
+  }
+}
+
+/*-------type7-------*/
+
+.seven {
+  background-color: #000;
+  position: relative;
+}
+
+.seven .ring {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.seven .ring:nth-of-type(1) {
+  border-bottom: 5px solid rgb(25, 191, 25);
+  animation: load7-a 2s linear infinite;
+}
+
+.seven .ring:nth-of-type(2) {
+  border-right: 5px solid rgb(33, 114, 201);
+  animation: load7-b 2s linear infinite;
+}
+
+.seven .ring:nth-of-type(3) {
+  border-top: 5px solid rgb(180, 210, 44);
+  animation: load7-c 2s linear infinite;
+}
+
+@keyframes load7-a {
+  from {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes load7-b {
+  from {
+    transform: rotateX(50deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(50deg) rotateY(-10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes load7-c {
+  from {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+
+/*-------type8-------*/
+.eight {
+  background-color: rgb(252, 252, 252);
+}
+
+.circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: conic-gradient(
+    rgb(174, 213, 248) 0deg,
+    rgb(158, 205, 246) 90deg,
+    rgb(142, 197, 245) 180deg,
+    rgb(126, 189, 244) 270deg,
+    rgb(116, 182, 240) 315deg,
+    rgb(107, 178, 241) 360deg
+  );
+  transform-origin: 0 0;
+  animation: load8 1.6s linear infinite;
+}
+
+@keyframes load8 {
+  15% {
+    background: conic-gradient(
+      transparent 0deg,
+      rgb(158, 205, 246) 90deg,
+      rgb(142, 197, 245) 180deg,
+      rgb(126, 189, 244) 270deg,
+      rgb(116, 182, 240) 315deg,
+      rgb(107, 178, 241) 360deg
+    );
+  }
+  30% {
+    background: conic-gradient(
+      transparent 0deg,
+      transparent 90deg,
+      rgb(142, 197, 245) 180deg,
+      rgb(126, 189, 244) 270deg,
+      rgb(116, 182, 240) 315deg,
+      rgb(107, 178, 241) 360deg
+    );
+  }
+  36% {
+    background: conic-gradient(
+      transparent 0deg,
+      transparent 90deg,
+      transparent 180deg,
+      rgb(126, 189, 244) 270deg,
+      rgb(116, 182, 240) 315deg,
+      rgb(107, 178, 241) 360deg
+    );
+  }
+
+  50% {
+    background: conic-gradient(
+      transparent 0deg,
+      transparent 90deg,
+      transparent 180deg,
+      transparent 270deg,
+      rgb(116, 182, 240) 315deg,
+      rgb(107, 178, 241) 360deg
+    );
+  }
+
+  75% {
+    background: conic-gradient(
+      transparent 0deg,
+      transparent 90deg,
+      transparent 180deg,
+      transparent 270deg,
+      transparent 315deg,
+      rgb(107, 178, 241) 360deg
+    );
+  }
+
+  100% {
+    background: conic-gradient(
+      transparent 0deg,
+      transparent 90deg,
+      transparent 180deg,
+      transparent 270deg,
+      transparent 315deg,
+      transparent 360deg
+    );
   }
 }
