@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(49, 83, 99);
+}
+
+.cup {
+  position: relative;
+  width: 290px;
+  height: 350px;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+  background: linear-gradient(to right, rgb(242, 242, 242), rgb(174, 172, 172));
+}
+
+.inner-cup {
+  position: absolute;
+  top: -30px;
+  width: 290px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(to left, rgb(242, 242, 242), rgb(174, 172, 172));
+}
+
+.tea {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  left: 0;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(rgb(165, 99, 86), rgb(156, 98, 87));
+}
+
+.handle {
+  position: absolute;
+  right: -100px;
+  top: 46px;
+  width: 150px;
+  height: 180px;
+  border: 25px solid rgb(174, 172, 172);
+  border-radius: 45%;
+  border-left: transparent;
+  z-index: -1;
+}
+
+.saucer {
+  position: absolute;
+  bottom: -100px;
+  left: -115px;
+  width: 530px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: rgb(174, 172, 172);
+  z-index: -2;
+}
+
+.saucer::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  width: 510px;
+  height: 220px;
+  border-radius: 50%;
+  background: linear-gradient(to left, rgb(242, 242, 242), rgb(185, 183, 183));
+}
+
+.saucer::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 85px;
+  width: 355px;
+  height: 155px;
+  border-radius: 50%;
+  background: radial-gradient(rgb(110, 110, 110) 35%, transparent, transparent);
+}
+
+.vapor span {
+  position: absolute;
+  top: -90px;
+  left: calc(var(--i) * 14px);
+  width: 8px;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  animation: vaporize 3s linear infinite;
+  animation-delay: calc(var(--i) * -0.5s);
+  filter: blur(30px);
+  opacity: 0;
+}
+
+@keyframes vaporize {
+  0% {
+    transform: translateY(0) scaleX(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-50px) scaleY(1);
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-100px) scaleY(2);
+    opacity: 1;
+  }
+}
